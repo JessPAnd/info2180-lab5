@@ -1,1 +1,15 @@
 /* Add your own styles */
+body {
+    background-color: rgb(244, 244, 248);
+    font-family: -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "NotoSans", sans-serif;
+}
+
+header {
+    background-color: rgb(48, 48, 51);
+    color:rgb(234, 239, 244);
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
