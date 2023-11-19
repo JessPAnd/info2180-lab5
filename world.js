@@ -4,14 +4,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     lookupButton.addEventListener('click', function() {
         let country = document.getElementById('country').value;
-        fetch(`http://localhost:8080/info2180-lab5/world.php?name=${country}`)
-            .then((response) =>{
-                if(response.ok){
-                    return response.text();
-                }else{
-                    return Promise.reject("An error has occured");
-                }
-            })
+        fetch(`http://localhost:8080/info2180-lab5/world.php?country=${country}`)
+        .then((response)=>{
+            if(response.ok){
+                return response.text();
+            }
+            else
+            {
+                return Promise.reject(Error);
+            }
+        })
             .then((data) =>{
                 resultDiv.innerHTML = data;
             })
