@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     lookupButton.addEventListener('click', function() {
         let country = document.getElementById('country').value;
+        // Changed the port number to 8080 since the original port number was not working on my device
         fetch(`http://localhost:8080/info2180-lab5/world.php?country=${country}`)
         .then((response)=>{
             if(response.ok){
